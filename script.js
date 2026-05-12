@@ -34,9 +34,7 @@ function App() {
     const [details, setDetails] =
         useState([]);
 
-    // =========================
-    // RESULT STATE
-    // =========================
+    
 
     const [marks, setMarks] =
         useState("");
