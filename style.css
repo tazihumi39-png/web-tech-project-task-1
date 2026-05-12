@@ -1,0 +1,334 @@
+/* =========================
+   GOOGLE FONTS
+========================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap");
+
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: 
+        radial-gradient(ellipse at top left, #e9d5ff 0%, transparent 50%),
+        radial-gradient(ellipse at top right, #fce7f3 0%, transparent 50%),
+        radial-gradient(ellipse at bottom left, #fef3c7 0%, transparent 50%),
+        radial-gradient(ellipse at bottom right, #ddd6fe 0%, transparent 50%),
+        #fdf4ff;
+    color: #3b3340;
+    letter-spacing: 0.01em;
+    line-height: 1.6;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1{
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+
+    background: linear-gradient(
+        135deg,
+        #a855f7,
+        #ec4899,
+        #f59e0b
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+header p{
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #9333ea;
+    letter-spacing: 0.02em;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow:
+        0 8px 32px rgba(168, 85, 247, 0.12),
+        0 2px 8px rgba(236, 72, 153, 0.08);
+    transition: 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow:
+        0 16px 40px rgba(168, 85, 247, 0.18),
+        0 4px 12px rgba(236, 72, 153, 0.12);
+}
+
+.card h2{
+    font-family: "Playfair Display", serif;
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    background: linear-gradient(90deg, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* =========================
+   FORM
+========================= */
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* =========================
+   INPUT
+========================= */
+
+input{
+    width: 100%;
+    padding: 16px;
+    border-radius: 14px;
+    border: 2px solid rgba(216, 164, 248, 0.4);
+    outline: none;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    background: rgba(255, 255, 255, 0.7);
+    color: #3b3340;
+    transition: 0.3s ease;
+    letter-spacing: 0.01em;
+    backdrop-filter: blur(8px);
+}
+
+input::placeholder{
+    color: #c4a8d4;
+    font-weight: 300;
+}
+
+input:focus{
+    border-color: #c084fc;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow:
+        0 0 0 4px rgba(192, 132, 252, 0.15),
+        0 4px 16px rgba(168, 85, 247, 0.1);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+button{
+    padding: 15px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(
+        135deg,
+        #a855f7,
+        #ec4899
+    );
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
+}
+
+button:hover{
+    transform: translateY(-2px);
+    background: linear-gradient(
+        135deg,
+        #9333ea,
+        #db2777
+    );
+    box-shadow:
+        0 8px 25px rgba(168, 85, 247, 0.4),
+        0 4px 10px rgba(236, 72, 153, 0.2);
+}
+
+/* =========================
+   RESULT
+========================= */
+
+#adminResult{
+    margin-top: 18px;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #10b981;
+    letter-spacing: 0.01em;
+}
+
+#result{
+    margin-top: 20px;
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #f59e0b;
+}
+
+/* =========================
+   LIST
+========================= */
+
+ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+ul li{
+    padding: 15px 18px;
+    margin-bottom: 12px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    border-left: 5px solid #c084fc;
+    color: #4b3f6b;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    transition: 0.3s ease;
+    box-shadow: 0 2px 8px rgba(168, 85, 247, 0.08);
+}
+
+ul li:hover{
+    transform: translateX(5px);
+    background: rgba(255, 255, 255, 0.85);
+    border-left-color: #ec4899;
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.15);
+}
+
+/* =========================
+   DETAIL BOX
+========================= */
+
+.detail-box{
+    margin-top: 18px;
+    padding: 22px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(216, 164, 248, 0.35);
+    transition: 0.3s ease;
+}
+
+.detail-box:hover{
+    transform: scale(1.01);
+    border-color: #c084fc;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 25px rgba(168, 85, 247, 0.12);
+}
+
+.detail-box p{
+    margin-bottom: 10px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #4b3f6b;
+    font-weight: 400;
+}
+
+/* =========================
+   INFO BOX
+========================= */
+
+.info-box{
+    padding: 25px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(216, 164, 248, 0.35);
+}
+
+.info-box h3{
+    margin-top: 18px;
+    font-family: "Playfair Display", serif;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    background: linear-gradient(90deg, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.info-box p{
+    margin-top: 8px;
+    font-family: "Inter", sans-serif;
+    line-height: 1.8;
+    color: #6b5b8a;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 768px){
+
+    body{
+        padding: 20px;
+    }
+
+    header h1{
+        font-size: 36px;
+    }
+
+    .card{
+        padding: 25px;
+    }
+
+    .card h2{
+        font-size: 22px;
+    }
+
+    button{
+        font-size: 14px;
+    }
+}
