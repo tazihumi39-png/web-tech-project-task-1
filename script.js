@@ -2,9 +2,7 @@ const { useState } = React;
 
 function App() {
 
-    // =========================
-    // ADMIN STATE
-    // =========================
+    
 
     const [adminName, setAdminName] =
         useState("");
@@ -15,9 +13,6 @@ function App() {
     const [adminResult, setAdminResult] =
         useState("");
 
-    // =========================
-    // SUPERVISOR STATE
-    // =========================
 
     const [supervisorName, setSupervisorName] =
         useState("");
@@ -25,9 +20,7 @@ function App() {
     const [supervisors, setSupervisors] =
         useState([]);
 
-    // =========================
-    // DETAILS STATE
-    // =========================
+    
 
     const [supName, setSupName] =
         useState("");
@@ -50,10 +43,6 @@ function App() {
 
     const [result, setResult] =
         useState("");
-
-    // =========================
-    // CREATE ADMIN
-    // =========================
 
     const createAdmin = (e) => {
 
@@ -79,9 +68,7 @@ function App() {
         setAdminEmail("");
     };
 
-    // =========================
-    // ADD SUPERVISOR
-    // =========================
+    
 
     const addSupervisor = (e) => {
 
@@ -93,7 +80,7 @@ function App() {
             return;
         }
 
-        // Spread Operator
+        
 
         setSupervisors([
             ...supervisors,
@@ -103,9 +90,7 @@ function App() {
         setSupervisorName("");
     };
 
-    // =========================
-    // SAVE DETAILS
-    // =========================
+    
 
     const saveDetails = (e) => {
 
@@ -135,9 +120,7 @@ function App() {
         setSupDepartment("");
     };
 
-    // =========================
-    // CHECK RESULT
-    // =========================
+
 
     const checkResult = () => {
 
@@ -151,9 +134,7 @@ function App() {
         );
     };
 
-    // =========================
-    // STRICT EQUALITY
-    // =========================
+
 
     const numberValue = 10;
 
@@ -165,15 +146,13 @@ function App() {
             : "Not Equal"
     );
 
-    // =========================
-    // JSX
-    // =========================
+
 
     return (
 
         <div className="container">
 
-            {/* HEADER */}
+        
 
             <header>
 
@@ -187,7 +166,7 @@ function App() {
 
             </header>
 
-            {/* CREATE ADMIN */}
+        
 
             <section className="card">
 
@@ -231,7 +210,7 @@ function App() {
 
             </section>
 
-            {/* ADD SUPERVISOR */}
+        
 
             <section className="card">
 
@@ -276,7 +255,7 @@ function App() {
 
             </section>
 
-            {/* SUPERVISOR DETAILS */}
+    
 
             <section className="card">
 
@@ -369,7 +348,7 @@ function App() {
 
             </section>
 
-            {/* RESULT CHECKER */}
+        
 
             <section className="card">
 
@@ -398,7 +377,7 @@ function App() {
 
             </section>
 
-            {/* OPERATORS */}
+            
 
             <section className="card">
 
@@ -439,8 +418,6 @@ function App() {
         </div>
     );
 }
-
-// RENDER
 
 const root =
     ReactDOM.createRoot(

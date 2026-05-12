@@ -1,12 +1,8 @@
-/* =========================
-   GOOGLE FONTS
-========================= */
+
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap");
 
-/* =========================
-   GLOBAL
-========================= */
+
 
 *{
     margin: 0;
@@ -29,18 +25,14 @@ body{
     line-height: 1.6;
 }
 
-/* =========================
-   CONTAINER
-========================= */
+
 
 .container{
     max-width: 1100px;
     margin: auto;
 }
 
-/* =========================
-   HEADER
-========================= */
+
 
 header{
     text-align: center;
@@ -73,9 +65,6 @@ header p{
     letter-spacing: 0.02em;
 }
 
-/* =========================
-   CARD
-========================= */
 
 .card{
     background: rgba(255, 255, 255, 0.75);
@@ -111,9 +100,6 @@ header p{
     background-clip: text;
 }
 
-/* =========================
-   FORM
-========================= */
 
 form{
     display: flex;
@@ -121,9 +107,6 @@ form{
     gap: 18px;
 }
 
-/* =========================
-   INPUT
-========================= */
 
 input{
     width: 100%;
@@ -154,9 +137,7 @@ input:focus{
         0 4px 16px rgba(168, 85, 247, 0.1);
 }
 
-/* =========================
-   BUTTON
-========================= */
+
 
 button{
     padding: 15px;
@@ -190,9 +171,7 @@ button:hover{
         0 4px 10px rgba(236, 72, 153, 0.2);
 }
 
-/* =========================
-   RESULT
-========================= */
+
 
 #adminResult{
     margin-top: 18px;
@@ -211,9 +190,6 @@ button:hover{
     color: #f59e0b;
 }
 
-/* =========================
-   LIST
-========================= */
 
 ul{
     list-style: none;
@@ -243,9 +219,6 @@ ul li:hover{
     box-shadow: 0 4px 15px rgba(168, 85, 247, 0.15);
 }
 
-/* =========================
-   DETAIL BOX
-========================= */
 
 .detail-box{
     margin-top: 18px;
@@ -273,9 +246,6 @@ ul li:hover{
     font-weight: 400;
 }
 
-/* =========================
-   INFO BOX
-========================= */
 
 .info-box{
     padding: 25px;
@@ -306,9 +276,7 @@ ul li:hover{
     font-weight: 400;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 
 @media(max-width: 768px){
 
